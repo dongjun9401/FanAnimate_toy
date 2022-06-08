@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토이프로젝트 - 선풍기</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div id="fan_wrap">
+        <div id="fan_top">
+            <div id="fan_back">
+            
+            </div>
+
+            <div id="fan_blade_wrap">
+                <p id="fan_blade">
+
+                </p>
+                <p class="blade_circle"></p>
+            </div>
+
+            <div id="fan_front">
+
+            </div>
+        </div> <!--fan_top-->
+
+
+        <div id="fan_bottom">
+            <div id="pillar">
+                
+            </div> <!--pillar-->
+            <div class="bottom01">
+                
+            </div>
+            <div class="bottom02">
+                <ul class="bottom02_btn" >
+                    <li><button type="button" class="btn">정지</button></li>
+                    <li><button type="button" class="btn">1단</button></li>
+                    <li><button type="button" class="btn">2단</button></li>
+                    <li><button type="button" class="btn">3단</button></li>
+                </ul>
+
+                <ul class="bottom02_txt01">
+                    <li>정지</li>
+                    <li>1단</li>
+                    <li>2단</li>
+                    <li>3단</li>
+                </ul>
+
+                <p class="bottom02_txt02">회전</p>
+
+                <p class="btn_box">
+                    <button type="button" class="rotate_btn">회전</button>
+                </p>
+
+            </div> <!--bottom02-->
+
+            <div class="bottom03">
+                <div class="bg_select">
+                    <label for="bg01">Camping</label>
+                    <input type="radio" name="bg_img" id="bg01">
+
+                    <label for="bg02">River</label>
+                    <input type="radio" name="bg_img" id="bg02" checked>
+
+                    <label for="bg03">Ocean</label>
+                    <input type="radio" name="bg_img" id="bg03">
+                </div>
+
+                <div class="fan_seclect">
+                    <label for="#fan_amount" class="fan_amount">Fan Blade<span>5</span></label>
+                    <input type="range" min="4" max="6" id="fan_amount">
+                </div>
+            </div> <!--bottom03-->
+
+        </div> <!--fan_bottom-->
+    </div> <!--fan_wrap-->
+
+    <script src="script.js"></script>
+</body>
+</html>
